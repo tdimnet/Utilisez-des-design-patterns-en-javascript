@@ -2,14 +2,14 @@
     "data": [
         {
             "title": "Predator",
-            "sysnopsis": "",
-            "picture": "",
+            "synopsis": "Le commando de forces spéciales mené par le major Dutch Schaeffer est engagé par la CIA pour sauver les survivants d’un crash d’hélicoptère au cœur d’une jungle d’Amérique Centrale",
+            "picture": "Predator.jpg",
             "duration": "1h47",
             "released_in": 1987
         },
         {
             "title": "Terminator",
-            "sysnopsis": "",
+            "synopsis": "",
             "picture": "",
             "duration": "1h47",
             "released_in": 1984
