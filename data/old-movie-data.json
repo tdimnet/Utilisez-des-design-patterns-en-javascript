@@ -3,14 +3,14 @@
         {
             "title": "Predator",
             "synopsis": "Le commando de forces spéciales mené par le major Dutch Schaeffer est engagé par la CIA pour sauver les survivants d’un crash d’hélicoptère au cœur d’une jungle d’Amérique Centrale",
-            "picture": "Predator.jpg",
+            "picture": "predator.jpg",
             "duration": "1h47",
             "released_in": 1987
         },
         {
             "title": "Terminator",
-            "synopsis": "",
-            "picture": "",
+            "synopsis": " En 2029, la surface de la Terre rasée par une guerre nucléaire, voit une poignée de survivants se battre contre les machines qui tentent de prendre le pouvoir.",
+            "picture": "terminator.jpg",
             "duration": "1h47",
             "released_in": 1984
         }
