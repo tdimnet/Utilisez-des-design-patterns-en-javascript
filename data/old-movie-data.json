@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "title": "Predator",
+            "sysnopsis": "",
+            "picture": "",
+            "duration": "1h47",
+            "released_in": 1987
+        },
+        {
+            "title": "Terminator",
+            "sysnopsis": "",
+            "picture": "",
+            "duration": "1h47",
+            "released_in": 1984
+        }
+    ]
+}
