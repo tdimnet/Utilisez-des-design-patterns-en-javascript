@@ -1,4 +1,5 @@
-class Movie {
+class OldMovie {
+    // le paramètre data correspond aux données reçues par l'API
     constructor(data) {
         this._duration = data.duration
         this._picture = data.picture
@@ -11,6 +12,7 @@ class Movie {
         return this._duration
     }
 
+    // Me retourne une grande version de l'image
     get picture() {
         return `/assets/${this._picture}`
     }
@@ -23,11 +25,12 @@ class Movie {
         return this._synopsis
     }
 
+    // Me retourne sa thumbnail
     get thumbnail() {
         return `/assets/thumbnails/${this._picture}`
     }
 
     get title() {
-        return this._title.hasOwnProperty('fr') ? this._title['fr'] : this._title['en']
+        return this._title
     }
 }
