@@ -21,6 +21,7 @@ class MovieCard {
                 <span>${this._movie.duration}</span>
             </p>
         `
+        
         $wrapper.innerHTML = movieCard
         return $wrapper
     }

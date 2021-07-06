@@ -1,4 +1,8 @@
 class Api {
+    /**
+     * 
+     * @param {string} url 
+     */
     constructor(url) {
         this._url = url
     }
@@ -13,6 +17,10 @@ class Api {
 
 
 class MovieApi extends Api {
+    /**
+     * 
+     * @param {string} url 
+     */
     constructor(url) {
         super(url)
     }
