@@ -1,10 +1,12 @@
 class App {
     constructor() {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
+        this.moviesApi = new MovieApi('/data/old-movie-data.json')
     }
 
     async main() {
-        const movies = await getMovies()
+        const movies = await this.moviesApi.getMovies()
+
         movies.forEach(movie => {
             const Template = new MovieCard(movie)
             this.$moviesWrapper.appendChild(Template.createMovieCard())        

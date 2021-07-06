@@ -20,6 +20,18 @@ body {
     text-align: center;
 }
 
+/* Header */
+.main-header {
+    display: flex;
+    align-items: baseline;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+}
+
 /* Movies Wrapper */
 .movies-wrapper {
     width: 90%;
