@@ -62,6 +62,34 @@
             "picture": "true-lies.jpg",
             "duration": "2h21",
             "released_in": 1994
+        },
+        {
+            "title": "Conan le Barbare",
+            "synopsis": "Encore enfant, Conan assiste impuissant au massacre de ses parents par le cruel Thulsa Doom, et est réduit en esclavage.",
+            "picture": "conan-le-barbare.jpg",
+            "duration": "2h09",
+            "released_in": 1982
+        },
+        {
+            "title": "La Course au jouet",
+            "synopsis": "La veille de Noël, un homme d'affaires et un facteur affrontent toutes sortes d'obstacles pour mettre la main sur un jouet rarissime, le Turbo Man, commandé au Père Noël par leurs fils respectifs.",
+            "picture": "la-course-au-jouet.jpg",
+            "duration": "1h29",
+            "released_in": 1996
+        },
+        {
+            "title": "Commando",
+            "synopsis": "Afin de retrouver sa fille kidnappée, un membre des commandos se lance dans une guerre solitaire contre un gang de criminels en Amérique du sud.",
+            "picture": "commando.jpg",
+            "duration": "1h30",
+            "released_in": 1986
+        },
+        {
+            "title": "Un flic à la maternelle",
+            "synopsis": "John Kimble, excellent flic, poursuit inlassablement les barons de la drogue. Après quatre années de traque, il finit par arrêter Cullen Crisp, dangereux criminel.",
+            "picture": "un-flic-a-la-maternelle.jpg",
+            "duration": "1h51",
+            "released_in": 1991
         }
     ]
 }
