@@ -90,6 +90,27 @@
             "picture": "un-flic-a-la-maternelle.jpg",
             "duration": "1h51",
             "released_in": 1991
+        },
+        {
+            "title": "À l'aube du 6ème jour",
+            "synopsis": "À l'heure où la génétique a fait d’énormes progrès, éradiquant les maladies et mettant fin aux famines, le pilote d’hélicoptère Adam Gibson est quelque peu perplexe quant à l’évolution du monde.",
+            "picture": "a-l-aube-du-6eme-jour.jpg",
+            "duration": "2h03",
+            "released_in": 2000
+        },
+        {
+            "title": "Jumeaux",
+            "synopsis": "En 1953 est tentée l’expérience de donner naissance a un être exceptionnel, compose des gènes de 6 hommes aux multiples qualités.",
+            "picture": "jumeaux.jpg",
+            "duration": "1h47",
+            "released_in": 1988
+        },
+        {
+            "title": "Junior",
+            "synopsis": "Afin de mener à bien une étude sur la fertilité, le docteur Arbogast injecte un produit au docteur Hesse et fait de lui le premier homme... enceint !",
+            "picture": "junior.jpg",
+            "duration": "1h49",
+            "released_in": 1995
         }
     ]
 }
