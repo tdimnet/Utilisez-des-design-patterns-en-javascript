@@ -13,6 +13,34 @@
             "picture": "terminator.jpg",
             "duration": "1h47",
             "released_in": 1984
+        },
+        {
+            "title": "Last Action Hero",
+            "synopsis": "Grâce a un billet magique, Danny Madigan, un enfant de onze ans, parvient à vivre les aventures de son héros de cinéma préféré, Jack Slater.",
+            "picture": "last-action-hero.jpg",
+            "duration": "2h10",
+            "released_in": 1993
+        },
+        {
+            "title": "Terminator 2",
+            "synopsis": "En 2029, après son échec pour éliminer Sarah Connor, Skynet programme un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer son fils John Connor, futur leader de la résistance humaine.",
+            "picture": "terminator-2.jpg",
+            "duration": "2h17",
+            "released_in": 1991
+        },
+        {
+            "title": "Total Recall",
+            "synopsis": "En 2048, Mars a été colonisée. Doug Quaid, ouvrier de chantier, est hanté par un cauchemar qui l'entraîne chaque nuit sur la planète rouge.",
+            "picture": "total-recall.jpg",
+            "duration": "1h53",
+            "released_in": 1990
+        },
+        {
+            "title": "Expendables : Unité spéciale",
+            "synopsis": "Un agent de la CIA engage un groupe de mercenaires experts, qui n'obéissent à aucun gouvernement, pour éliminer un général sud-américain.",
+            "picture": "expendables-unite-speciale.jpg",
+            "duration": "1h43",
+            "released_in": 2010
         }
     ]
 }
