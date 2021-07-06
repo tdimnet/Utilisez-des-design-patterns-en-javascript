@@ -11,7 +11,7 @@ class MovieCard {
             <div class="movie-thumbnail center">
                 <img
                     alt="${this._movie.title}"
-                    src="/assets/thumbnails/${this._movie.picture}"
+                    src="${this._movie.thumbnail}"
                 />
             </div>
             <h3 class="fs-16 center">${this._movie.title}</h3>
