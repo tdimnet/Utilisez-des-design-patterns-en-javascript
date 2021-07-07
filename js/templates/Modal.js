@@ -25,7 +25,7 @@ class Form {
                     lastName: lastNameInputValue
                 })
 
-                if (user.data) {
+                if (user.user) {
                     this.$modalWrapper.classList.remove('modal-on')
                     this.$modalWrapper.innerHTML = ""
                 } 
@@ -35,7 +35,10 @@ class Form {
 
     shouldDisplayForm() {
         const user = new User()
-        return !user.data
+        
+        console.log(user.user)
+
+        return !user.user
     }
 
     createForm() {

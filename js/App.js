@@ -5,12 +5,6 @@ class App {
         
         this.moviesApi = new MovieApi('/data/new-movie-data.json')
         this.externalMoviesApi = new MovieApi('/data/external-movie-data.json')
-
-        /* Vous pouvez commenter ou décommenter cette ligne pour tester l'apparition de la fenêtre */
-        // this.User = new User({
-        //     firstName: 'John',
-        //     lastName: 'Doe'
-        // })
     }
 
 
