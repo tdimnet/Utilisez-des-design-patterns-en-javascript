@@ -35,9 +35,6 @@ class Form {
 
     shouldDisplayForm() {
         const user = new User()
-        
-        console.log(user.user)
-
         return !user.user
     }
 

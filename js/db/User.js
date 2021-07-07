@@ -6,6 +6,8 @@ class User {
             this._firstName = data.firstName
             this._lastName = data.lastName
 
+            this.saveToLocalStorage()
+
             User.instance = this
             User.exists = true
             return this
@@ -21,13 +23,28 @@ class User {
     }
 
     get user() {
-        if (!this._firstName && !this._lastName) {
+        const firstName = this._firstName || localStorage.getItem('firstName')
+        const lastName = this._lastName || localStorage.getItem('lastName')
+
+        if (firstName && lastName) {
+            const user = new User({
+                firstName,
+                lastName
+            })
+        }
+
+        if (!firstName && !lastName) {
             return null
         }
-        
+
         return {
-            firstName: this._firstName,
-            lastName: this._lastName,
+            firstName: firstName,
+            lastName: lastName,
         }   
+    }
+
+    saveToLocalStorage() {
+        localStorage.setItem('firstName', this._firstName)
+        localStorage.setItem('lastName', this._lastName)
     }
 }

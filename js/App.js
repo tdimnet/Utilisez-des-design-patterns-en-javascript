@@ -7,7 +7,6 @@ class App {
         this.externalMoviesApi = new MovieApi('/data/external-movie-data.json')
     }
 
-
     async main() {
         const moviesData = await this.moviesApi.get()
         const externalMoviesData = await this.externalMoviesApi.get()
