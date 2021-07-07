@@ -1,17 +1,22 @@
 class App {
     constructor() {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
-        this.moviesApi = new MovieApi('/data/new-movie-data.json')
+        
+        this.oldMoviesApi = new MovieApi('/data/old-movie-data.json')
+        this.newMoviesApi = new MovieApi('/data/new-movie-data.json')
     }
 
     async main() {
-        // Ici je récupère mes films de mon fichier old-movie-data.json
-        const moviesData = await this.moviesApi.getMovies()
+        const oldMoviesData = await this.oldMoviesApi.getMovies()
+        const newMoviesData = await this.newMoviesApi.getMovies()
+
+        const OldMovies = oldMoviesData
+            .map(movie => new MoviesFactory(movie, 'oldApi'))
+        const NewMovies = newMoviesData.map(movie => new MoviesFactory(movie, 'newApi'))
+
+        const FullMovies = OldMovies.concat(NewMovies)
         
-        moviesData
-            // Ici, je transforme mon tableau de données en un tableau de classe Movie
-            .map(movie => new Movie(movie))
-            .forEach(movie => {
+        FullMovies.forEach(movie => {
                 const Template = new MovieCard(movie)
                 this.$moviesWrapper.appendChild(
                     Template.createMovieCard()
