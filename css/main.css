@@ -50,3 +50,54 @@ body {
     object-fit: cover;
     box-shadow: 4px 5px 5px #333;
 }
+
+/* Modal */
+.modal-on {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, .7);
+    overflow: hidden;
+}
+
+.modal form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 8px;
+}
+
+.submit-btn {
+    margin-top: 12px;
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #333;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+    color: #eee;
+    border-color: #eee;
+}
