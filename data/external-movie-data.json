@@ -1,0 +1,108 @@
+{
+    "data": [
+        {
+            "title_fr": "Rocky",
+            "title_en": "Rocky",
+            "synopsis": "Dans les quartiers populaires de Philadelphie, Rocky Balboa, marginal au grand cœur, vit de petits boulots.",
+            "medias": {
+                "picture": "rocky.jpg",
+                "thumbnail": "rocky.jpg"
+            },
+            "infos": {
+                "duration": "1h59",
+                "released_in": 1977
+            }
+        },
+        {
+            "title_fr": "Taxi 3",
+            "title_en": "Taxi 3",
+            "synopsis": "C'est décembre à Marseille. Daniel rajoute des options à son taxi et Lili voit rouge. Le commissaire est aveuglé par sa stagiaire nippone et son enquête piétine.",
+            "medias": {
+                "picture": "taxi-3.jpg",
+                "thumbnail": "taxi-3.jpg"
+            },
+            "infos": {
+                "duration": "1h24",
+                "released_in": 2003
+            }
+        },
+        {
+            "title_fr": "Rambo",
+            "title_en": "First Blood",
+            "synopsis": "Après la mort de son dernier compagnon d'armes, John Rambo, vétéran du Vietnam, veut se reposer dans un village de montagne.",
+            "medias": {
+                "picture": "rambo.jpg",
+                "thumbnail": "rambo.jpg"
+            },
+            "infos": {
+                "duration": "1h33",
+                "released_in": 1983
+            }
+        },
+        {
+            "title_fr": "Demolition Man",
+            "title_en": "Demolition Man",
+            "synopsis": "En 2032, à San Angeles, une mégalopole californienne où toute violence a été éradiquée, Simon Phoenix, un tueur psychopathe condamné à une longue peine d'hibernation et de rééducation, profite d'une visite médicale pour s'évader.",
+            "medias": {
+                "picture": "demolition-man.jpg",
+                "thumbnail": "demolition-man.jpg"
+            },
+            "infos": {
+                "duration": "1h55",
+                "released_in": 1994
+            }
+        },
+        {
+            "title_fr": "Judge Dredd",
+            "title_en": "Judge Dredd",
+            "synopsis": "Nous somme en 2139, la planète a été ravagée par de terribles guerres atomiques. La vie subsiste dans des cités tentaculaires dont la capitale et Mega City One, mégalopole construite sur plusieurs niveaux.",
+            "medias": {
+                "picture": "judge-dredd.jpg",
+                "thumbnail": "judge-dredd.jpg"
+            },
+            "infos": {
+                "duration": "1h36",
+                "released_in": 1995
+            }
+        },
+        {
+            "title_fr": "Cliffhanger - Traque au sommet",
+            "title_en": "Cliffhanger",
+            "synopsis": "Un commando tente de détourner un avion afin de voler des valises pleines de billets présentes à bord mais l'argent tombe au beau milieu des Rocheuses et l'avion se crash.",
+            "medias": {
+                "picture": "cliffhanger.jpg",
+                "thumbnail": "cliffhanger.jpg"
+            },
+            "infos": {
+                "duration": "1h52",
+                "released_in": 1993
+            }
+        },
+        {
+            "title_fr": "Over the Top : Le Bras de fer",
+            "title_en": "Over the Top",
+            "synopsis": "Chauffeur routier solitaire, Lincoln Hawk est rongé par un divorce et par la culpabilité d'avoir abandonné son fils Michael qu'il n'a jamais vu.",
+            "medias": {
+                "picture": "over-the-top.jpg",
+                "thumbnail": "over-the-top.jpg"
+            },
+            "infos": {
+                "duration": "1h33",
+                "released_in": 1987
+            }
+        },
+        {
+            "title_fr": "L'expert",
+            "title_en": "THe Specialist",
+            "synopsis": "Ray Quick a quitté la CIA après une opération ratée menée par son ancien supérieur et qui a coûté la vie d'une enfant innocente.",
+            "medias": {
+                "picture": "expert.jpg",
+                "thumbnail": "expert.jpg"
+            },
+            "infos": {
+                "duration": "1h50",
+                "released_in": 1994
+            }
+        }
+    ]
+}
