@@ -7,6 +7,8 @@ class MoviesFactory {
         } else if (type === 'newApi') {
             return new Movie(data)
         // Une bonne pratique est de throw une erreur si le format n'est pas reconnu
+        } else if (type === 'externalApi') {
+            return new ExternalMovie(data)
         } else {
             throw 'Unknown type format'
         }

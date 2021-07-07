@@ -1,0 +1,30 @@
+{
+    "data": [
+        {
+            "title_fr": "Rocky",
+            "title_en": "Rocky",
+            "synopsis": "Dans les quartiers populaires de Philadelphie, Rocky Balboa, marginal au grand cœur, vit de petits boulots.",
+            "medias": {
+                "picture": "rocky.jpg",
+                "thumbnail": "rocky.jpg"
+            },
+            "infos": {
+                "duration": "1h59",
+                "released_in": 1977
+            }
+        },
+        {
+            "title_fr": "Taxi 3",
+            "title_en": "Taxi 3",
+            "synopsis": "C'est décembre à Marseille. Daniel rajoute des options à son taxi et Lili voit rouge. Le commissaire est aveuglé par sa stagiaire nippone et son enquête piétine.",
+            "medias": {
+                "picture": "taxi-3.jpg",
+                "thumbnail": "taxi-3.jpg"
+            },
+            "infos": {
+                "duration": "1h24",
+                "released_in": 2003
+            }
+        }
+    ]
+}
