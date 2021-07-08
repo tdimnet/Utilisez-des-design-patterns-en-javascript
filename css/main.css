@@ -101,3 +101,11 @@ body {
     color: #eee;
     border-color: #eee;
 }
+
+/* Filter Form */
+.filter-form-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+}

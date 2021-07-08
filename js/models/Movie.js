@@ -1,10 +1,15 @@
 class Movie {
     constructor(data) {
+        this._actor = "arnold"
         this._duration = data.duration
         this._picture = data.picture
         this._released_in = data.released_in
         this._synopsis = data.synopsis
         this._title = data.title
+    }
+
+    get actor() {
+        return this._actor
     }
 
     get duration() {
