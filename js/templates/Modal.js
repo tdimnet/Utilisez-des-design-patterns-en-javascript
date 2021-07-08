@@ -20,16 +20,17 @@ class Form {
                     .querySelector('#lastname')
                     .value
 
-                const user = new User({
-                    firstName: firstNameInputValue,
-                    lastName: lastNameInputValue
-                })
+                /* Note pour l'exercice : vous aurez besoin de décommenter ses lignes */
+                
+                // const user = new User({
+                //     firstName: firstNameInputValue,
+                //     lastName: lastNameInputValue
+                // })
 
-                if (user.user) {
-                    this.$modalWrapper.classList.remove('modal-on')
-                    this.$modalWrapper.innerHTML = ""
-                } 
-                    
+                // if (user.user) {
+                this.$modalWrapper.classList.remove('modal-on')
+                this.$modalWrapper.innerHTML = ""
+                // }
             })
     }
 
