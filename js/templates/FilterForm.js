@@ -10,20 +10,12 @@ class FilterForm {
     filterMovies(actor) {
         this.clearMoviesWrapper()
 
-        if (actor === 'all') {
-            this.Movies
-                .forEach(Movie => {
-                    const Template = new MovieCard(Movie)
-                    this.$moviesWrapper.appendChild(Template.createMovieCard())
-                })
-        } else {
-            this.Movies
-                .filter(Movie => Movie.actor === actor)
-                .forEach(Movie => {
-                    const Template = new MovieCard(Movie)
-                    this.$moviesWrapper.appendChild(Template.createMovieCard())
-                })
-        }
+        const FilteredMovies = FilterV2.filterByActor(actor, this.Movies)
+
+        FilteredMovies.forEach(Movie => {
+            const Template = new MovieCard(Movie)
+            this.$moviesWrapper.appendChild(Template.createMovieCard())
+        })
     }
 
     onChangeFilter() {
@@ -44,7 +36,7 @@ class FilterForm {
             <form class="filter-form" action="#" method="POST">
                 <label for="filter-select">Choississez votre acteur préféré : </label>
                 <select name="filter-select" id="filter-select">
-                    <option value="all">Aucun filtre</option>
+                    <option value="">Aucun filtre</option>
                     <option value="arnold">Arnold Schwarsenegger</option>
                     <option value="sylvester">Sylvester Stallone</option>
                 </select>

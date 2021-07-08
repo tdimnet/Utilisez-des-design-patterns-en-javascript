@@ -18,10 +18,14 @@
         <h1>Filmo Patterns</h1>
         <p>Des films et des design patterns</p>
     </header>
-    <div class="filter-form-wrapper">
-    </div>
+    <div class="filter-form-wrapper"></div>
     <main class="movies-wrapper"></main>
     <div class="modal"></div>
+    
+    <!-- Lib -->
+    <script src="/lib/filter-v1/index.js"></script>
+    <script src="/lib/filter-v2/index.js"></script>
+
     <!-- Factories -->
     <script src="/js/factories/MoviesFactory.js"></script>
 
@@ -32,6 +36,9 @@
 
     <!-- Singleton -->
     <script src="/js/db/User.js"></script>
+
+    <!-- Adapters -->
+    <script src="/js/adapters/FilterMoviesAdapter.js"></script>
 
     <!-- Templates -->
     <script src="/js/templates/MovieCard.js"></script>
