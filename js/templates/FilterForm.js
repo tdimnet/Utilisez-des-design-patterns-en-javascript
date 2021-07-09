@@ -42,7 +42,7 @@ class FilterForm {
                 <label for="filter-select">Choississez votre acteur préféré : </label>
                 <select name="filter-select" id="filter-select">
                     <option value="">Aucun filtre</option>
-                    <option value="arnold">Arnold Schwarsenegger</option>
+                    <option value="arnold">Arnold Schwarzenegger</option>
                     <option value="sylvester">Sylvester Stallone</option>
                 </select>
             </form>
