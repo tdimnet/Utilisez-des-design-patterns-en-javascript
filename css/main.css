@@ -109,3 +109,36 @@ body {
     margin-right: auto;
     margin-bottom: 36px;
 }
+
+
+/* Player Modal */
+.player-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #333;
+    border-radius: 8px;
+    height: 36px;
+    width: 200px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #eee;
+    color: #333;
+}

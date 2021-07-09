@@ -1,4 +1,4 @@
-class Form {
+class FormModal {
     constructor() {
         this.$wrapper = document.createElement('div')
         this.$modalWrapper = document.querySelector('.modal')

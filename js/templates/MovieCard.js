@@ -1,12 +1,12 @@
 class MovieCard {
     constructor(movie) {
         this._movie = movie
+
+        this.$wrapper = document.createElement('div')
+        this.$wrapper.classList.add('movie-card-wrapper')
     }
 
     createMovieCard() {
-        const $wrapper = document.createElement('div')
-        $wrapper.classList.add('movie-card-wrapper')
-
         const movieCard = `
             <div class="movie-thumbnail center">
                 <img
@@ -22,7 +22,23 @@ class MovieCard {
             </p>
         `
         
-        $wrapper.innerHTML = movieCard
-        return $wrapper
+        this.$wrapper.innerHTML = movieCard
+        return this.$wrapper
     }
+
+    get movie() {
+        return this._movie
+    }
+}
+
+
+function movieCardWithPlayer(movieCard) {
+    if (movieCard.movie.actor === 'arnold') {
+        movieCard.$wrapper.addEventListener('click', () => {
+            const Player = new PlayerModal(movieCard.movie)
+            Player.render()
+        })
+    }
+
+    return movieCard
 }
