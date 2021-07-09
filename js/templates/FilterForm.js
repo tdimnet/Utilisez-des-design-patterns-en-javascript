@@ -7,10 +7,14 @@ class FilterForm {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
     }
 
-    filterMovies(actor) {
+    async filterMovies(actor) {
         this.clearMoviesWrapper()
 
-        const FilteredMovies = FilterV2.filterByActor(actor, this.Movies)
+        // const FilterLib = new FilterV1(this.Movies, actor)
+        // const FilteredMovies = await FilterLib.filterByActor()
+
+        const AdaptedFilterLib = new FilterMoviesAdapter(this.Movies, actor)
+        const FilteredMovies = await AdaptedFilterLib.filterByActor()
 
         FilteredMovies.forEach(Movie => {
             const Template = new MovieCard(Movie)
