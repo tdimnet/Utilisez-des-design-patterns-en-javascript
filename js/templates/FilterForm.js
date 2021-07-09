@@ -10,6 +10,7 @@ class FilterForm {
     async filterMovies(actor) {
         this.clearMoviesWrapper()
 
+        /* Vous pourrez par la suite supprimer ces lignes */
         // const FilterLib = new FilterV1(this.Movies, actor)
         // const FilteredMovies = await FilterLib.filterByActor()
 
