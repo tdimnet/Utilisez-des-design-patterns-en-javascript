@@ -30,15 +30,3 @@ class MovieCard {
         return this._movie
     }
 }
-
-
-function movieCardWithPlayer(movieCard) {
-    if (movieCard.movie.actor === 'arnold') {
-        movieCard.$wrapper.addEventListener('click', () => {
-            const Player = new PlayerModal(movieCard.movie)
-            Player.render()
-        })
-    }
-
-    return movieCard
-}

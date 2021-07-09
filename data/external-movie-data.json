@@ -11,7 +11,8 @@
             "infos": {
                 "duration": "1h59",
                 "released_in": 1977
-            }
+            },
+            "trailer_id": "rnS20usFqYs"
         },
         {
             "title_fr": "Taxi 3",
@@ -24,7 +25,8 @@
             "infos": {
                 "duration": "1h24",
                 "released_in": 2003
-            }
+            },
+            "trailer_id": "yvFfavDPwIw"
         },
         {
             "title_fr": "Rambo",
@@ -37,7 +39,8 @@
             "infos": {
                 "duration": "1h33",
                 "released_in": 1983
-            }
+            },
+            "trailer_id": "lDvChaAmIsI"
         },
         {
             "title_fr": "Demolition Man",
@@ -50,7 +53,8 @@
             "infos": {
                 "duration": "1h55",
                 "released_in": 1994
-            }
+            },
+            "trailer_id": "awZ8NiBShHA"
         },
         {
             "title_fr": "Judge Dredd",
@@ -63,7 +67,8 @@
             "infos": {
                 "duration": "1h36",
                 "released_in": 1995
-            }
+            },
+            "trailer_id": "JeMuuanngo0"
         },
         {
             "title_fr": "Cliffhanger - Traque au sommet",
@@ -76,7 +81,8 @@
             "infos": {
                 "duration": "1h52",
                 "released_in": 1993
-            }
+            },
+            "trailer_id": "RP00GTBEySY"
         },
         {
             "title_fr": "Over the Top : Le Bras de fer",
@@ -89,7 +95,8 @@
             "infos": {
                 "duration": "1h33",
                 "released_in": 1987
-            }
+            },
+            "trailer_id": "HejxlSBZmY4"
         },
         {
             "title_fr": "L'expert",
@@ -102,7 +109,8 @@
             "infos": {
                 "duration": "1h50",
                 "released_in": 1994
-            }
+            },
+            "trailer_id": "Y6Ox25NdFbE"
         }
     ]
 }

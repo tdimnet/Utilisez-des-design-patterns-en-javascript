@@ -6,6 +6,7 @@ class ExternalMovie {
         this._synopsis = data.synopsis
         this._title_en = data.title_en
         this._title_fr = data.title_fr
+        this._trailer = data.trailer_id
     }
 
     get actor() {
@@ -34,5 +35,9 @@ class ExternalMovie {
 
     get title() {
         return this._title_fr ? this._title_fr : this._title_en
+    }
+
+    get trailer() {
+        return `https://www.youtube.com/embed/${this._trailer}`
     }
 }
