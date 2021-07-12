@@ -6,6 +6,10 @@ class MovieCard {
         this.$wrapper.classList.add('movie-card-wrapper')
     }
 
+    get movie() {
+        return this._movie
+    }
+
     createMovieCard() {
         const movieCard = `
             <div class="movie-thumbnail center">
@@ -24,9 +28,5 @@ class MovieCard {
         
         this.$wrapper.innerHTML = movieCard
         return this.$wrapper
-    }
-
-    get movie() {
-        return this._movie
     }
 }
