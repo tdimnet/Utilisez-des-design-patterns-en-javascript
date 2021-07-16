@@ -18,13 +18,17 @@
         <h1>Filmo Patterns</h1>
         <p>Des films et des design patterns</p>
     </header>
-    <div class="filter-form-wrapper"></div>
+    <div class="forms-wrapper">
+        <div class="filter-form-wrapper"></div>
+        <div class="sorter-form-wrapper"></div>
+    </div>
     <main class="movies-wrapper"></main>
     <div class="modal"></div>
     
     <!-- Lib -->
     <script src="/lib/filter-v1/index.js"></script>
     <script src="/lib/filter-v2/index.js"></script>
+    <script src="/lib/sorter/index.js"></script>
 
     <!-- Factories -->
     <script src="/js/factories/MoviesFactory.js"></script>
@@ -43,11 +47,15 @@
     <!-- Decorators -->
     <script src="/js/decorators/movieCardWithPlayer.js"></script>
 
+    <!-- Proxy -->
+    <script src="/js/proxy/ProxyRatingSorter.js"></script>
+
     <!-- Templates -->
     <script src="/js/templates/PlayerModal.js"></script>
     <script src="/js/templates/MovieCard.js"></script>
     <script src="/js/templates/FormModal.js"></script>
     <script src="/js/templates/FilterForm.js"></script>
+    <script src="/js/templates/SorterForm.js"></script>
 
     <!-- Api -->
     <script src="/js/api/Api.js"></script>

@@ -23,6 +23,9 @@ class App {
         const Filter = new FilterForm(FullMovies)
         Filter.render()
 
+        const Sorter = new SorterForm(FullMovies)
+        Sorter.render()
+
         FullMovies.forEach(movie => {
                 const Template = movieCardWithPlayer(new MovieCard(movie))
                 this.$moviesWrapper.appendChild(
