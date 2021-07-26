@@ -1,18 +1,14 @@
-class App {
-    constructor() {
-        this.$moviesWrapper = document.querySelector('.movies-wrapper')
-        this.moviesApi = new MovieApi('/data/movie-data.json')
+class Quiz {
+    constructor(title, questionNumber) {
+        if (title === 'partie-1' && questionNumber === 4) {
+            this._title = title
+            this._questionNumber = questionNumber
+        } else {
+            throw 'Les paramètres données ne sont pas les bons !'
+        }
     }
 
-    async main() {
-        const movies = await this.moviesApi.getMovies()
-
-        movies.forEach(movie => {
-            const Template = new MovieCard(movie)
-            this.$moviesWrapper.appendChild(Template.createMovieCard())        
-        })    
+    getAnswer() {
+        return "C'était pas si difficile :)"
     }
 }
-
-const app = new App()
-app.main()
