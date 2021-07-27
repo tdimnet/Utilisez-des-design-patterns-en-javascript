@@ -37,16 +37,16 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
 }
 
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: tomato;
+    margin-bottom: 18px;
+}
 
-/* Movie Card */
-.movie-thumbnail img {
-    border-radius: 8px;
-    height: 177px;
-    width: 120px;
-    object-fit: cover;
-    box-shadow: 4px 5px 5px #333;
+.fade-in {
+    opacity: 0;
+    transition: .4s;
 }
