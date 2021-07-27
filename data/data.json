@@ -1,0 +1,40 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Movie 1",
+            "img": "212312.jpg",
+            "rating": 6.5
+        },
+        {
+            "id": 2,
+            "title": "Movie 2",
+            "img": "212323.jpg",
+            "rating": 7.2
+        },
+        {
+            "id": 3,
+            "title": "Movie 3",
+            "img": "212112.jpg",
+            "rating": 4.2
+        },
+        {
+            "id": 4,
+            "title": "Movie 4",
+            "img": "982312.jpg",
+            "rating": 2.6
+        },
+        {
+            "id": 5,
+            "title": "Movie 5",
+            "img": "298612.jpg",
+            "rating": 6.1
+        },
+        {
+            "id": 6,
+            "title": "Movie 6",
+            "img": "876541.jpg",
+            "rating": 9.1
+        }
+    ]
+}
