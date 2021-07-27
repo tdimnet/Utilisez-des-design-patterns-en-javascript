@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "title": "Predator",
+            "synopsis": "Le commando de forces spéciales mené par le major Dutch Schaeffer est engagé par la CIA pour sauver les survivants d’un crash d’hélicoptère au cœur d’une jungle d’Amérique Centrale",
+            "picture": "predator.jpg",
+            "duration": "1h47",
+            "released_in": 1987,
+            "type": "movie"
+        },
+        {
+            "title": "Terminator",
+            "synopsis": "En 2029, la surface de la Terre rasée par une guerre nucléaire, voit une poignée de survivants se battre contre les machines qui tentent de prendre le pouvoir.",
+            "picture": "terminator.jpg",
+            "duration": "1h47",
+            "released_in": 1984,
+            "type": "movie"
+        },
+        {
+            "title": "Last Action Hero",
+            "synopsis": "Grâce a un billet magique, Danny Madigan, un enfant de onze ans, parvient à vivre les aventures de son héros de cinéma préféré, Jack Slater.",
+            "picture": "last-action-hero.jpg",
+            "duration": "2h10",
+            "released_in": 1993,
+            "type": "movie"
+        },
+        {
+            "title": "Sur écoute",
+            "synopsis": "À Baltimore, le trafic de drogue est omniprésent. Une unité spéciale est mise en place pour démanteler le réseau de deux caïds de l'ouest de la ville.",
+            "picture": "sur-ecoute.jpg",
+            "durationPerEpisode": 59,
+            "numberOfSeasons": 5,
+            "released_in": 2002,
+            "type": "tv-show"
+        },
+        {
+            "title": "La Maison des bois",
+            "synopsis": "Pendant la Première Guerre mondiale, un garde forestier héberge dans sa famille trois enfants parisiens dont les pères sont au front.",
+            "picture": "la-maison-des-bois.jpg",
+            "durationPerEpisode": 50,
+            "numberOfSeasons": 1,
+            "released_in": 1971,
+            "type": "tv-show"
+        },
+        {
+            "title": "Breaking Bad",
+            "synopsis": "Walter White, 50 ans, est professeur de chimie dans un lycée du Nouveau-Mexique. Pour subvenir aux besoins de Skyler, sa femme enceinte, et de Walt Junior,...",
+            "picture": "breaking-bad.jpg",
+            "durationPerEpisode": 47,
+            "numberOfSeasons": 5,
+            "released_in": 2008,
+            "type": "tv-show"
+        }
+    ]
+}

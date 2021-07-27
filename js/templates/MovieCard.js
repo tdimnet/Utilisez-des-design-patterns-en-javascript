@@ -3,7 +3,7 @@ class MovieCard {
         this._movie = movie
     }
 
-    createMovieCard() {
+    createCard() {
         const $wrapper = document.createElement('div')
         $wrapper.classList.add('movie-card-wrapper')
 
