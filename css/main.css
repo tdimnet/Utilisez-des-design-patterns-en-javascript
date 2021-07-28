@@ -41,14 +41,44 @@ body {
     grid-template-columns: repeat(8, 1fr);
 }
 
-
 /* Movie Card */
+.movie-thumbnail {
+    position: relative;
+}
+
 .movie-thumbnail img {
     border-radius: 8px;
     height: 177px;
     width: 120px;
     object-fit: cover;
     box-shadow: 4px 5px 5px #333;
+}
+
+.wish-btn {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 55px;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.wish-btn path {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 6px;
+    transition: .4s;
+}
+
+.wish-btn.wished path  {
+    fill: tomato;
+    stroke: #fff;
 }
 
 /* Modal */
@@ -113,7 +143,7 @@ body {
 
 /* Filter Form */
 .filter-form-wrapper {
-    margin-bottom: 36px;
+    margin-bottom: 12px;
 }
 
 
