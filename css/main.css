@@ -55,24 +55,24 @@ body {
 }
 
 .wish-btn {
-    height: 30px;
-    width: 30px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 8px;
+    bottom: 5px;
     cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    padding: 4px;
     position: absolute;
     right: 55px;
-    bottom: 5px;
-    background-color: rgba(255, 255, 255, .7);
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+    width: 30px;
 }
 
 .wish-btn path {
     fill: transparent;
-    stroke: #000;
     stroke-width: 6px;
+    stroke: #000;
     transition: .4s;
 }
 

@@ -1,31 +1,3 @@
-class WishCounter {
-    constructor() {
-        this.count = 0
-        this.observers = []
-    }
-
-    increment() {
-        this.count += 1
-
-        this.notify({ count: this.count })
-
-    }
-
-    decrement() {
-        this.count -= 1
-
-        this.notify({ count: this.count })
-    }
-
-    addObserver(observer) {
-        this.observers.push(observer)
-    }
-
-    notify(data) {
-        this.observers.forEach(observer => observer.call(null, data))
-    }
-}
-
 class App {
     constructor() {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
@@ -34,10 +6,11 @@ class App {
         this.moviesApi = new MovieApi('/data/new-movie-data.json')
         this.externalMoviesApi = new MovieApi('/data/external-movie-data.json')
 
-        this._WishCounter = new WishCounter()
-        this._WishCounter.addObserver(() => {
-            document.querySelector('.wish-count').innerHTML = this._WishCounter.count
-        })
+        // WishLib Pub/sub
+        this.WishlistSubject = new WishlistSubject()
+        this.WhishListCounterObserver = new CounterObserver()
+
+        this.WishlistSubject.subscribe(this.WhishListCounterObserver)
     }
 
     async main() {
@@ -59,7 +32,10 @@ class App {
         Sorter.render()
 
         FullMovies.forEach(movie => {
-                const Template = movieCardWithPlayer(new MovieCard(movie, this._WishCounter))
+                const Template = movieCardWithPlayer(
+                    new MovieCard(movie, this.WishlistSubject)
+                )
+
                 this.$moviesWrapper.appendChild(
                     Template.createMovieCard()
                 )

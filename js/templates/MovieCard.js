@@ -1,7 +1,7 @@
 class MovieCard {
-    constructor(movie, WishCounter) {
+    constructor(movie, WishListSubject) {
         this._movie = movie
-        this._WishCounter = WishCounter
+        this.WishListSubject = WishListSubject
 
         this.$wrapper = document.createElement('div')
         this.$wrapper.classList.add('movie-card-wrapper')
@@ -19,10 +19,10 @@ class MovieCard {
             .addEventListener('click', function() {
                 if (this.classList.contains('wished')) {
                     this.classList.remove('wished')
-                    that._WishCounter.decrement()
+                    that.WishListSubject.fire('DEC')
                 } else {
                     this.classList.add('wished')
-                    that._WishCounter.increment()
+                    that.WishListSubject.fire('INC')
                 }
             })
     }
