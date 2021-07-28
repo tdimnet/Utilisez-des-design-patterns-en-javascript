@@ -8,9 +8,9 @@ class App {
 
         // WishLib Pub/sub
         this.WishlistSubject = new WishlistSubject()
-        this.WhishListCounterObserver = new CounterObserver()
+        this.WhishListCounter = new WhishListCounter()
 
-        this.WishlistSubject.subscribe(this.WhishListCounterObserver)
+        this.WishlistSubject.subscribe(this.WhishListCounter)
     }
 
     async main() {
