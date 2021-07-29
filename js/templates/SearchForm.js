@@ -1,39 +1,3 @@
-class Search {
-    constructor(Movies) {
-        this.Movies = Movies
-    }
-
-    search(query) {
-        return this.filterMovies(query)
-    }
-}
-
-
-class MovieNameSearch extends Search {
-    constructor(Movies) {
-        super(Movies)
-    }
-
-    filterMovies(query) {
-        return this.Movies.filter(Movie =>
-            Movie.title.toLowerCase().includes(query.toLowerCase())
-        )
-    }
-}
-
-class ActorNameSearch extends Search {
-    constructor(Movies) {
-        super(Movies)
-    }
-
-    filterMovies(query) {
-        return this.Movies.filter(Movie =>
-            Movie.actor.toLowerCase().includes(query.toLowerCase())
-        )
-    }
-}
-
-
 class SearchForm {
     constructor(Movies) {
         this.Movies = Movies
@@ -48,24 +12,28 @@ class SearchForm {
     }
 
     search(query) {
-        let result = null
+        let SearchedMovies = null
         
         if (this.isSearchingByActor) {
-            result = this.ActorNameSearch.search(query)
+            SearchedMovies = this.ActorNameSearch.search(query)
         } else {
-            result = this.MovieNameSearch.search(query)
+            SearchedMovies = this.MovieNameSearch.search(query)
         }
 
-        this.clearMoviesWrapper()
-        
-        result.forEach(Movie => {
-            const Template = new MovieCard(Movie)
-            this.$moviesWrapper.appendChild(Template.createMovieCard())
-        })
+        this.displayMovies(SearchedMovies)
     }
 
     clearMoviesWrapper() {
         this.$moviesWrapper.innerHTML = ""
+    }
+
+    displayMovies(Movies) {
+        this.clearMoviesWrapper()
+
+        Movies.forEach(Movie => {
+            const Template = new MovieCard(Movie)
+            this.$moviesWrapper.appendChild(Template.createMovieCard())
+        })
     }
 
     onSearch() {
@@ -77,9 +45,7 @@ class SearchForm {
                 if (query.length >= 3) {
                     this.search(query)
                 } else if (query.length === 0) {
-                    console.log("===")
-                    console.log("reboot")
-                    console.log("===")
+                    this.displayMovies(this.Movies)
                 }
             })
     }
