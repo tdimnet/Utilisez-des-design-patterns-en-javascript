@@ -1,7 +1,10 @@
 class FormModal {
-    constructor() {
+    constructor(UserContext) {
         this.$wrapper = document.createElement('div')
         this.$modalWrapper = document.querySelector('.modal')
+
+        // User
+        this.UserContext = UserContext
     }
 
     onSubmitForm() {
@@ -20,22 +23,18 @@ class FormModal {
                     .querySelector('#lastname')
                     .value
 
-                const user = new User({
-                    firstName: firstNameInputValue,
-                    lastName: lastNameInputValue
-                })
+                this.UserContext.change(firstNameInputValue, lastNameInputValue)
 
-                if (user.user) {
+                if (this.UserContext.currentState.isConnected) {
                     this.$modalWrapper.classList.remove('modal-on')
                     this.$modalWrapper.innerHTML = ""
-                } 
+                }
                     
             })
     }
 
     shouldDisplayForm() {
-        const user = new User()
-        return !user.user
+        return !this.UserContext.currentState.isConnected
     }
 
     createForm() {
