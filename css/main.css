@@ -178,3 +178,23 @@ body {
     background-color: #eee;
     color: #333;
 }
+
+
+/* Search Form */
+.search-form-wrapper {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.search-form-wrapper form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 24px;
+}
