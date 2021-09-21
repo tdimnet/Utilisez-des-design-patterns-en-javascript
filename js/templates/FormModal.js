@@ -23,7 +23,8 @@ class FormModal {
                     .querySelector('#lastname')
                     .value
 
-                this.UserContext.change(firstNameInputValue, lastNameInputValue)
+                // Vous pourrez décommenter cette ligne
+                // this.UserContext.change(firstNameInputValue, lastNameInputValue)
 
                 if (this.UserContext.currentState.isConnected) {
                     this.$modalWrapper.classList.remove('modal-on')
@@ -34,7 +35,8 @@ class FormModal {
     }
 
     shouldDisplayForm() {
-        return !this.UserContext.currentState.isConnected
+        // Vous pourrez décommenter cette ligne
+        // return !this.UserContext.currentState.isConnected
     }
 
     createForm() {
