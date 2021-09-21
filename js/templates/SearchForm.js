@@ -12,6 +12,9 @@ class SearchForm {
     }
 
     search(query) {
+        // Décomenter ces lignes de code une fois que votre recherche est fonctionnelle
+
+        /*
         let SearchedMovies = null
         
         if (this.isSearchingByActor) {
@@ -21,6 +24,7 @@ class SearchForm {
         }
 
         this.displayMovies(SearchedMovies)
+        */
     }
 
     clearMoviesWrapper() {
@@ -55,8 +59,6 @@ class SearchForm {
             .querySelector('.search-checkbox')
             .addEventListener('change', e => {
                 this.isSearchingByActor = e.target.checked
-
-                console.log(this.isSearchingByActor)
             })
     }
 
