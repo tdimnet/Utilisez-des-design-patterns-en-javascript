@@ -1,16 +1,28 @@
 class App {
     constructor() {
         this.$moviesWrapper = document.querySelector('.movies-wrapper')
-        this.moviesApi = new MovieApi('/data/movie-data.json')
+        this.ApiState = new Context()
+
+        this.moviesApi = new MovieApi(
+            '/data/movie-data.json', this.ApiState
+        )
     }
 
     async main() {
         const movies = await this.moviesApi.getMovies()
 
-        movies.forEach(movie => {
-            const Template = new MovieCard(movie)
-            this.$moviesWrapper.appendChild(Template.createMovieCard())        
-        })    
+        const { state } = this.ApiState
+
+        if (state === 'success') {
+            movies.forEach(movie => {
+                const Template = new MovieCard(movie)
+                this.$moviesWrapper.appendChild(Template.createMovieCard())
+            })
+        } else if (state === 'error') {
+            window.alert('Something went wrong')
+        }
+
+
     }
 }
 
