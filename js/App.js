@@ -1,16 +1,21 @@
-class App {
-    constructor() {
-        this.$moviesWrapper = document.querySelector('.movies-wrapper')
-        this.moviesApi = new MovieApi('/data/movie-data.json')
+class FetchMovies {
+    async get() {
+        return fetch('/data/movie-data.json')
+            .then(res => res.json())
+            .then(res => res.data)
+            .catch(err => console.log('Une erreur est survenue', err))
     }
+}
 
+class FetchMoviesProxy {
+}
+
+class App {
     async main() {
-        const movies = await this.moviesApi.getMovies()
+        const Proxy = new FetchMoviesProxy()
+        const data = await Proxy.fetchMovies()
 
-        movies.forEach(movie => {
-            const Template = new MovieCard(movie)
-            this.$moviesWrapper.appendChild(Template.createMovieCard())        
-        })    
+        console.log("Les données sont : ", data)
     }
 }
 
