@@ -1,4 +1,4 @@
-class Api {
+class ApiV1 {
     /**
      * 
      * @param {string} url 
@@ -16,7 +16,7 @@ class Api {
 }
 
 
-class MovieApi extends Api {
+class MovieApi extends ApiV1 {
     /**
      * 
      * @param {string} url 
